@@ -26,8 +26,8 @@ h1 {
     transform: translateX(-10px); /* Adjust as needed */
 }
 
-
 button {
+    display: inline-block; /* Ensure buttons are side by side */
     font-size: 1.5rem;
     padding: 10px 20px;
     border: none;
