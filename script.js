@@ -4,11 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const responseMessage = document.getElementById("response-message");
     const buttonsContainer = document.querySelector(".buttons");
     const bgMusic = document.getElementById("bg-music");
+    const originalMessage = document.querySelector("h1");
 
     // "Yes" button click event
     yesBtn.addEventListener("click", function () {
         responseMessage.textContent = "Yay! 💖 I love you more! 😘";
         buttonsContainer.style.display = "none"; // Hide buttons
+        originalMessage.style.display = "none"; // Hide original message
         const img = document.createElement("img");
         img.src = "cat-hearts.gif"; // Path to the gif
         img.alt = "Cat with hearts";
