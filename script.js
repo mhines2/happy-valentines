@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // "Yes" button click event
     yesBtn.addEventListener("click", function () {
-        responseMessage.textContent = "Yay! 💖 Can't wait for our special day! 😘";
+        responseMessage.textContent = "Yay! 💖 I love you more! 😘";
         buttonsContainer.style.display = "none"; // Hide buttons
         const img = document.createElement("img");
         img.src = "cat-hearts.gif"; // Path to the gif
