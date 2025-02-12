@@ -23,7 +23,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 20px; /* Adds spacing between buttons */
-    transform: translateX(-20px); /* Shift buttons to the left */
+    transform: translateX(-40px); /* Shift buttons to the left */
 }
 
 button {
