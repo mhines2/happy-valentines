@@ -20,10 +20,7 @@ h1 {
 
 .buttons {
     margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Adds spacing between buttons */
-    transform: translateX(-20px); /* Adjust as needed */
+    margin-left: -20px;
 }
 
 
