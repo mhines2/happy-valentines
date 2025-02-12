@@ -1,0 +1,55 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    font-family: 'Indie Flower', cursive;
+    background-color: #ffdde1;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 20vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #d63384;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+#yes-btn {
+    background-color: #ff4081;
+    color: white;
+    font-weight: bold;
+}
+
+#yes-btn:hover {
+    background-color: #e60073;
+}
+
+#no-btn {
+    background-color: #ccc;
+    color: black;
+    position: absolute;
+}
+
+#response-message {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: #e60073;
+    font-weight: bold;
+}
