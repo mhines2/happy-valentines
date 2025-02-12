@@ -25,17 +25,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }); // Play background music
     });
 
-    // Function to move the "No" button to a random position within a small range
+    // Function to move the "No" button to a random position within the viewport
     function moveNoButton() {
-        const moveRange = 50; // Move within a range of -25px to 25px
-        const x = Math.random() * moveRange - moveRange / 2;
-        const y = Math.random() * moveRange - moveRange / 2;
-        const currentLeft = parseInt(noBtn.style.left || 0, 10);
-        const currentTop = parseInt(noBtn.style.top || 0, 10);
-        const newLeft = Math.max(0, Math.min(currentLeft + x, window.innerWidth - noBtn.clientWidth));
-        const newTop = Math.max(0, Math.min(currentTop + y, window.innerHeight - noBtn.clientHeight));
-        noBtn.style.left = `${newLeft}px`;
-        noBtn.style.top = `${newTop}px`;
+        const x = Math.random() * (window.innerWidth - noBtn.clientWidth);
+        const y = Math.random() * (window.innerHeight - noBtn.clientHeight);
+        noBtn.style.left = `${Math.max(0, Math.min(x, window.innerWidth - noBtn.clientWidth))}px`;
+        noBtn.style.top = `${Math.max(0, Math.min(y, window.innerHeight - noBtn.clientHeight))}px`;
     }
 
     // "No" button hover event (moves away)
