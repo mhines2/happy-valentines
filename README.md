@@ -11,7 +11,7 @@ This is a simple and interactive **Valentine's Day web page** to ask someone spe
 ## 🚀 Live Demo
 Once hosted on GitHub Pages, visit:
 ```
-https://mhines2.github.io/happy-valentines/
+https://mhines2.github.io/valentines-proposal/
 ```
 
 ## 📂 Project Structure
@@ -26,7 +26,7 @@ https://mhines2.github.io/happy-valentines/
 ## 🛠 How to Run Locally
 1. Clone the repository:
    ```sh
-   git clone https://github.com/mhines2/happy-valentines.git
+   git clone https://github.com/mhines2/valentines-proposal.git
    ```
 2. Open `index.html` in your browser.
 3. (Optional) Use **Live Server** in VS Code for real-time preview.
