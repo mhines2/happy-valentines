@@ -20,8 +20,7 @@ h1 {
 
 .buttons {
     margin-top: 20px;
-    position: relative;
-    left: -100px; /* Shift buttons to the left */
+    transform: translateX(-100px); /* Shift buttons to the left */
 }
 
 button {
