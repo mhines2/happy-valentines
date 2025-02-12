@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const noBtn = document.getElementById("no-btn");
     const responseMessage = document.getElementById("response-message");
     const buttonsContainer = document.querySelector(".buttons");
+    const bgMusic = document.getElementById("bg-music");
 
     // "Yes" button click event
     yesBtn.addEventListener("click", function () {
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         img.style.display = "block";
         img.style.margin = "20px auto";
         document.body.appendChild(img); // Add gif to the center of the screen
+        bgMusic.play(); // Play background music
     });
 
     // Function to move the "No" button to a random position
