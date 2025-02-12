@@ -29,8 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
     function moveNoButton() {
         const x = Math.random() * (window.innerWidth - noBtn.clientWidth);
         const y = Math.random() * (window.innerHeight - noBtn.clientHeight);
-        noBtn.style.left = `${Math.max(0, Math.min(x, window.innerWidth - noBtn.clientWidth))}px`;
-        noBtn.style.top = `${Math.max(0, Math.min(y, window.innerHeight - noBtn.clientHeight))}px`;
     }
 
     // "No" button hover event (moves away)
