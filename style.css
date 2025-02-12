@@ -23,7 +23,6 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 20px; /* Adds spacing between buttons */
-    transform: translateX(-10px); /* Adjust as needed */
 }
 
 button {
@@ -49,7 +48,7 @@ button {
 #no-btn {
     background-color: #ccc;
     color: black;
-    position: absolute;
+    position: relative; /* Change to relative to align with flexbox */
 }
 
 #response-message {
