@@ -9,6 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Ensure the audio is loaded and ready to play
     bgMusic.load();
 
+    // Set initial position for the "No" button
+    noBtn.style.position = "absolute";
+    noBtn.style.left = "50%";
+    noBtn.style.top = "50%";
+    noBtn.style.transform = "translate(-50%, -50%)";
+
     // "Yes" button click event
     yesBtn.addEventListener("click", function () {
         responseMessage.textContent = "Yay! 💖 I love you more! 😘";
