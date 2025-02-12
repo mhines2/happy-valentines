@@ -20,8 +20,12 @@ h1 {
 
 .buttons {
     margin-top: 20px;
-    transform: translateX(-100px); /* Shift buttons to the left */
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds spacing between buttons */
+    transform: translateX(-30px); /* Adjust as needed */
 }
+
 
 button {
     font-size: 1.5rem;
