@@ -4,8 +4,8 @@ This is a simple and interactive **Valentine's Day web page** to ask someone spe
 
 ## 🎨 Features
 - Cute **"Will You Be My Valentine?"** message.
-- **Yes** button shows a lovely confirmation message.
-- **No** button moves away when hovered over (so they can't say no! 😆).
+- **Yes** button shows a lovely confirmation message, hides the buttons and original message, displays a cute GIF, and plays background music.
+- **No** button moves away when hovered over or clicked (so they can't say no! 😆).
 - Styled with **CSS** for a romantic look.
 
 ## 🚀 Live Demo
@@ -20,6 +20,8 @@ https://mhines2.github.io/valentines-proposal/
 ├── index.html    # Main HTML file
 ├── style.css     # Styling for the webpage
 ├── script.js     # Interactive button behavior
+├── cat-hearts.gif # GIF displayed when "Yes" button is clicked
+├── these-words.mp3 # Background music played when "Yes" button is clicked
 └── README.md     # Project documentation
 ```
 
@@ -28,8 +30,9 @@ https://mhines2.github.io/valentines-proposal/
    ```sh
    git clone https://github.com/mhines2/valentines-proposal.git
    ```
-2. Open `index.html` in your browser.
-3. (Optional) Use **Live Server** in VS Code for real-time preview.
+2. Ensure all files (`index.html`, `style.css`, `script.js`, `cat-hearts.gif`, `these-words.mp3`) are in the same directory.
+3. Open `index.html` in your browser.
+4. (Optional) Use **Live Server** in VS Code for real-time preview.
 
 ## 📢 How to Deploy on GitHub Pages
 1. Push all project files to your GitHub repository.
