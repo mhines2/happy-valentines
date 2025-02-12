@@ -20,13 +20,11 @@ h1 {
 
 .buttons {
     margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Adds spacing between buttons */
+    margin-left: -40px;
 }
 
+
 button {
-    display: inline-block; /* Ensure buttons are side by side */
     font-size: 1.5rem;
     padding: 10px 20px;
     border: none;
@@ -48,7 +46,7 @@ button {
 #no-btn {
     background-color: #ccc;
     color: black;
-    position: relative; /* Change to relative to align with flexbox */
+    position: absolute;
 }
 
 #response-message {
