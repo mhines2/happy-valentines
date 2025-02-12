@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const bgMusic = document.getElementById("bg-music");
     const originalMessage = document.querySelector("h1");
 
+    // Ensure the audio is loaded and ready to play
+    bgMusic.load();
+
     // "Yes" button click event
     yesBtn.addEventListener("click", function () {
         responseMessage.textContent = "Yay! 💖 I love you more! 😘";
@@ -17,15 +20,17 @@ document.addEventListener("DOMContentLoaded", function () {
         img.style.display = "block";
         img.style.margin = "20px auto";
         document.body.appendChild(img); // Add gif to the center of the screen
-        bgMusic.play(); // Play background music
+        bgMusic.play().catch(error => {
+            console.error("Failed to play audio:", error);
+        }); // Play background music
     });
 
-    // Function to move the "No" button to a random position
+    // Function to move the "No" button to a random position within the viewport
     function moveNoButton() {
         const x = Math.random() * (window.innerWidth - noBtn.clientWidth);
         const y = Math.random() * (window.innerHeight - noBtn.clientHeight);
-        noBtn.style.left = `${x}px`;
-        noBtn.style.top = `${y}px`;
+        noBtn.style.left = `${Math.max(0, Math.min(x, window.innerWidth - noBtn.clientWidth))}px`;
+        noBtn.style.top = `${Math.max(0, Math.min(y, window.innerHeight - noBtn.clientHeight))}px`;
     }
 
     // "No" button hover event (moves away)
