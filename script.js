@@ -2,10 +2,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const yesBtn = document.getElementById("yes-btn");
     const noBtn = document.getElementById("no-btn");
     const responseMessage = document.getElementById("response-message");
+    const buttonsContainer = document.querySelector(".buttons");
 
     // "Yes" button click event
     yesBtn.addEventListener("click", function () {
         responseMessage.textContent = "Yay! 💖 Can't wait for our special day! 😘";
+        buttonsContainer.style.display = "none"; // Hide buttons
+        const img = document.createElement("img");
+        img.src = "cat-hearts.gif"; // Path to the gif
+        img.alt = "Cat with hearts";
+        img.style.display = "block";
+        img.style.margin = "20px auto";
+        document.body.appendChild(img); // Add gif to the center of the screen
     });
 
     // Function to move the "No" button to a random position
