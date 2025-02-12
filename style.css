@@ -48,7 +48,7 @@ button {
 #no-btn {
     background-color: #ccc;
     color: black;
-    position: absolute;
+    position: relative; /* Change to relative to align with flexbox */
 }
 
 #response-message {
