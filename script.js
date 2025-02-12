@@ -25,11 +25,23 @@ document.addEventListener("DOMContentLoaded", function () {
         }); // Play background music
     });
 
-    // Function to move the "No" button to a random position within the viewport
+    // Function to move the "No" button slightly without going off-screen
     function moveNoButton() {
-        const x = Math.random() * (window.innerWidth - noBtn.clientWidth);
-        const y = Math.random() * (window.innerHeight - noBtn.clientHeight);
+        const maxMove = 50; // Maximum pixels the button can move per hover
+        const rect = noBtn.getBoundingClientRect(); // Get button's current position
+
+        let newX = rect.left + (Math.random() * maxMove * 2 - maxMove); // Move left or right
+        let newY = rect.top + (Math.random() * maxMove * 2 - maxMove); // Move up or down
+
+        // Ensure button stays within the viewport
+        newX = Math.max(0, Math.min(window.innerWidth - noBtn.clientWidth, newX));
+        newY = Math.max(0, Math.min(window.innerHeight - noBtn.clientHeight, newY));
+
+        noBtn.style.position = "absolute"; // Ensure the button is positioned absolutely
+        noBtn.style.left = `${newX}px`;
+        noBtn.style.top = `${newY}px`;
     }
+
 
     // "No" button hover event (moves away)
     noBtn.addEventListener("mouseover", moveNoButton);
