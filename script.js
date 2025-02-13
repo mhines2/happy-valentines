@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // "Yes" button click event
     yesBtn.addEventListener("click", function () {
-        responseMessage.textContent = "Yay! 💖 I love you more! 😘";
+        responseMessage.textContent = "Yay! 💖 I love you! 😘";
         buttonsContainer.style.display = "none"; // Hide buttons
         originalMessage.style.display = "none"; // Hide original message
         const img = document.createElement("img");
