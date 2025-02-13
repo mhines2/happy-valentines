@@ -2,26 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+    <!-- Apple Touch Icon (For iOS link previews & home screen) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Valentines Proposal" />
+    <meta property="og:description" content="Software solutions from Belo Technologies." />
+    <meta property="og:image" content="http://localhost:5173/og-image.png" />
+    <meta property="og:url" content="http://localhost:5173/" />
+    <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Will You Be My Valentine? 💖</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Valentines Proposal</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Will You Be My Valentine? 💕</h1>
-      <div class="buttons">
-        <button id="yes-btn">Yes 💘</button>
-        <button id="no-btn">No 💔</button>
-      </div>
-      <p id="response-message"></p>
-    </div>
-
-    <!-- Hidden Background Music (Plays on "Yes" Click) -->
-    <audio id="bg-music">
-      <source src="these-words.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
-
-    <script src="./script.js"></script>
+    <div id="root"></div>
+    <!-- Vite will inject compiled scripts here automatically -->
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
